@@ -1,0 +1,123 @@
+/* 1. Global Reset & Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fcfaf7; /* Soft cream background */
+    color: #2d3436;
+    padding: 40px 20px;
+}
+
+/* 2. Layout & Structure */
+article {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #ffffff;
+    border-radius: 15px;
+    overflow: hidden; /* Ensures image corners match border radius */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background: #fff;
+}
+
+h1 {
+    color: #e67e22; /* Warm orange-red */
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+
+/* 3. Flexbox Meta Details */
+.recipe-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background: #fdf2e9;
+    padding: 20px;
+    border-top: 1px solid #fae5d3;
+    border-bottom: 1px solid #fae5d3;
+    flex-wrap: wrap; /* Good for mobile responsiveness */
+}
+
+.meta-item {
+    font-weight: 600;
+    color: #a04000;
+}
+
+/* 4. Spacing & Organization */
+.recipe-content {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for clarity */
+    gap: 30px;
+}
+
+h2 {
+    color: #d35400;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+h2::after {
+    content: "";
+    flex: 1;
+    margin-left: 15px;
+    height: 2px;
+    background: #fae5d3;
+}
+
+/* 5. Styling Details & Creativity */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+    padding-left: 5px;
+}
+
+/* Hover effect on list items */
+li:hover {
+    color: #e67e22;
+    transition: color 0.3s ease;
+}
+
+.nutrition-card {
+    background: #f4f9f4;
+    border: 1px solid #d4efdf;
+    padding: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Button/Link Hover Effect */
+.source-link {
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.source-link:hover {
+    transform: translateX(5px);
+    color: #d35400;
+}
+
+
+footer {
+    padding: 0 40px 40px; /* Top: 0, Left/Right: 40px, Bottom: 40px */
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
